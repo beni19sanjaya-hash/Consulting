@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finovate | Consulting Partner</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-certificate logo-icon"></i> Finovate
+            </a>
+            
+            <div class="nav-links">
+                <div class="nav-item">
+                    <a href="index.html">Home <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#overview">Overview</a>
+                        <a href="#partners">Partners</a>
+                        <a href="#careers">Careers</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#services-section">Services <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#financial-consulting">Financial Consulting</a>
+                        <a href="#strategy-analytics">Strategy & Analytics</a>
+                        <a href="#investment-advisory">Investment Advisory</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#industries-section">Industries <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#banking-finance">Banking & Finance</a>
+                        <a href="#technology">Technology</a>
+                        <a href="#healthcare">Healthcare</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#about-section">About <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#our-story">Our Story</a>
+                        <a href="#leadership">Leadership</a>
+                        <a href="#sustainability">Sustainability</a>
+                    </div>
+                </div>
+                <a href="#insight" class="btn btn-white" style="padding: 4px 16px; border-radius: 20px; color: var(--dark-color)">Insight</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="search-btn">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Consulting Meeting" class="hero-bg">
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Your Trusted<br>Consulting Partner</h1>
+                <div style="display: flex; gap: 8px;">
+                    <button class="btn btn-primary" id="openConsultModal">Free Consultation</button>
+                    <a href="contact.html" class="btn-primary" style="display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%;">
+                        <i class="fa-solid fa-arrow-right" style="transform: rotate(-45deg);"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-stats-bar">
+                <div class="stat-item">TRUSTED PARTNER</div>
+                <div class="stat-item">FINANCIAL SERVICES</div>
+                <div class="stat-item">INVESTING</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SVG Clip Path Definition (star shape for card hover) -->
+    <svg width="0" height="0" style="position: absolute; overflow: hidden;">
+        <defs>
+            <clipPath id="starClip" clipPathUnits="objectBoundingBox">
+                <path d="M 0.5 0.05 C 0.60 0.28 0.72 0.40 0.95 0.5 C 0.72 0.60 0.60 0.72 0.5 0.95 C 0.40 0.72 0.28 0.60 0.05 0.5 C 0.28 0.40 0.40 0.28 0.5 0.05 Z"/>
+            </clipPath>
+        </defs>
+    </svg>
+
+    <!-- Highlights Section -->
+    <section class="highlights container">
+        <div class="highlights-grid">
+            
+            <!-- Card 1 -->
+            <div class="highlight-card">
+                <a href="#" class="card-link-icon">
+                    <i class="fa-solid fa-arrow-right" style="transform: rotate(-45deg);"></i>
+                </a>
+                <span class="subtitle">WHO WE ARE</span>
+                <h3>Leading Provider of<br>Analytics and Financial<br>Services</h3>
+                <div class="highlight-image">
+                    <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Team">
+                </div>
+                <!-- Hover Layer -->
+                <div class="card-hover-layer">
+                    <div class="hover-shape-img" style="background-image: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')"></div>
+                    <div class="hover-info">
+                        <div class="hover-info-text">
+                            <span class="hover-tag">WHO WE ARE</span>
+                            <h3>Leading Provider of<br>Analytics and Financial<br>Services</h3>
+                        </div>
+                        <a href="#" class="card-link-icon hover-arrow">
+                            <i class="fa-solid fa-arrow-right" style="transform: rotate(-45deg);"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="highlight-card">
+                <a href="#" class="card-link-icon">
+                    <i class="fa-solid fa-arrow-right" style="transform: rotate(-45deg);"></i>
+                </a>
+                <span class="subtitle">RECOGNITION</span>
+                <h3>Finovate Consulting Named a Agentforce Partner</h3>
+                <div class="highlight-image">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Partner">
+                </div>
+                <!-- Hover Layer -->
+                <div class="card-hover-layer">
+                    <div class="hover-shape-img" style="background-image: url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')"></div>
+                    <div class="hover-info">
+                        <div class="hover-info-text">
+                            <span class="hover-tag">RECOGNITION</span>
+                            <h3>Finovate Consulting Named a Agentforce Partner</h3>
+                        </div>
+                        <a href="#" class="card-link-icon hover-arrow">
+                            <i class="fa-solid fa-arrow-right" style="transform: rotate(-45deg);"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="highlight-card">
+                <a href="#" class="card-link-icon">
+                    <i class="fa-solid fa-arrow-right" style="transform: rotate(-45deg);"></i>
+                </a>
+                <span class="subtitle">REPORT</span>
+                <h3>2024 Diversity, Equity, and<br>Inclusion Report</h3>
+                <div class="highlight-image">
+                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Report">
+                </div>
+                <!-- Hover Layer -->
+                <div class="card-hover-layer">
+                    <div class="hover-shape-img" style="background-image: url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')"></div>
+                    <div class="hover-info">
+                        <div class="hover-info-text">
+                            <span class="hover-tag">REPORT</span>
+                            <h3>2024 Diversity, Equity, and<br>Inclusion Report</h3>
+                        </div>
+                        <a href="#" class="card-link-icon hover-arrow">
+                            <i class="fa-solid fa-arrow-right" style="transform: rotate(-45deg);"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">SERVICES</span>
+                <h2>We Champion the Bold to<br>Achieve the Extraordinary</h2>
+            </div>
+            
+            <div class="services-grid">
+                
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Service 1">
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Service 2">
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-building-columns"></i></div>
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Service 3">
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Service 4">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== OVERVIEW SECTION ========== -->
+    <section class="sec-overview" id="overview">
+        <div class="container">
+            <div class="sec-label"><span class="section-tag">OVERVIEW</span></div>
+            <div class="sec-split">
+                <div class="sec-split-text">
+                    <h2>Shaping the Future of<br>Global Finance</h2>
+                    <p>Finovate is a leading consulting firm dedicated to transforming organizations through data-driven insights, strategic advisory, and innovative financial solutions. Since our founding, we have partnered with Fortune 500 companies, emerging startups, and public institutions across 40+ countries.</p>
+                    <p>Our multidisciplinary teams bring together expertise in finance, technology, and human capital — delivering integrated solutions that drive measurable, lasting results.</p>
+                    <a href="#our-story" class="btn btn-primary" style="margin-top: 16px;">Learn Our Story <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="sec-split-visual">
+                    <div class="overview-stats-grid">
+                        <div class="ov-stat">
+                            <span class="ov-stat-num">40+</span>
+                            <span class="ov-stat-label">Countries Served</span>
+                        </div>
+                        <div class="ov-stat">
+                            <span class="ov-stat-num">500+</span>
+                            <span class="ov-stat-label">Global Clients</span>
+                        </div>
+                        <div class="ov-stat">
+                            <span class="ov-stat-num">98%</span>
+                            <span class="ov-stat-label">Client Satisfaction</span>
+                        </div>
+                        <div class="ov-stat">
+                            <span class="ov-stat-num">$2B+</span>
+                            <span class="ov-stat-label">Value Delivered</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PARTNERS SECTION ========== -->
+    <section class="sec-partners" id="partners">
+        <div class="container">
+            <div class="sec-label"><span class="section-tag">PARTNERS</span></div>
+            <h2 class="sec-title-center">Trusted by World-Class<br>Organizations</h2>
+            <div class="partners-logos">
+                <div class="partner-logo-item"><i class="fa-brands fa-google"></i><span>Google</span></div>
+                <div class="partner-logo-item"><i class="fa-brands fa-microsoft"></i><span>Microsoft</span></div>
+                <div class="partner-logo-item"><i class="fa-brands fa-amazon"></i><span>Amazon</span></div>
+                <div class="partner-logo-item"><i class="fa-brands fa-meta"></i><span>Meta</span></div>
+                <div class="partner-logo-item"><i class="fa-brands fa-apple"></i><span>Apple</span></div>
+                <div class="partner-logo-item"><i class="fa-solid fa-building-columns"></i><span>Goldman Sachs</span></div>
+            </div>
+            <div class="partners-testimonial">
+                <blockquote>
+                    "Finovate transformed how we approach financial strategy. Their team's depth of knowledge and commitment to excellence is truly unparalleled."
+                </blockquote>
+                <div class="testimonial-author">
+                    <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+                    <div>
+                        <strong>Sarah Mitchell</strong>
+                        <span>CFO, TechCorp Global</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CAREERS SECTION ========== -->
+    <section class="sec-careers" id="careers">
+        <div class="container">
+            <div class="sec-label"><span class="section-tag">CAREERS</span></div>
+            <div class="sec-split">
+                <div class="sec-split-visual careers-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Careers at Finovate">
+                    <div class="careers-badge">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>60+ Open Roles</span>
+                    </div>
+                </div>
+                <div class="sec-split-text">
+                    <h2>Build Your Career<br>With Us</h2>
+                    <p>Join a team of world-class thinkers, problem-solvers, and innovators. At Finovate, your growth is our priority — with mentorship programs, global mobility, and competitive compensation.</p>
+                    <div class="careers-perks">
+                        <div class="perk-item"><i class="fa-solid fa-globe"></i><span>Remote-friendly culture</span></div>
+                        <div class="perk-item"><i class="fa-solid fa-graduation-cap"></i><span>Learning & development budget</span></div>
+                        <div class="perk-item"><i class="fa-solid fa-heart"></i><span>Comprehensive health benefits</span></div>
+                        <div class="perk-item"><i class="fa-solid fa-chart-line"></i><span>Performance bonuses</span></div>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 8px;">View Open Roles <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES DETAIL SECTION ========== -->
+    <section class="sec-services-detail" id="services-section">
+        <div class="container">
+            <div class="sec-label"><span class="section-tag">SERVICES</span></div>
+            <h2 class="sec-title-center">Comprehensive Solutions<br>for Every Challenge</h2>
+
+            <!-- Financial Consulting -->
+            <div class="service-detail-card" id="financial-consulting">
+                <div class="sdc-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                <div class="sdc-content">
+                    <h3>Financial Consulting</h3>
+                    <p>We deliver end-to-end financial advisory services — from capital structuring and risk management to M&A due diligence. Our experts help organizations optimize their financial performance and unlock new growth opportunities.</p>
+                    <ul class="sdc-list">
+                        <li><i class="fa-solid fa-check"></i> Capital Structure Optimization</li>
+                        <li><i class="fa-solid fa-check"></i> Risk Management Frameworks</li>
+                        <li><i class="fa-solid fa-check"></i> Mergers & Acquisitions Advisory</li>
+                        <li><i class="fa-solid fa-check"></i> Financial Reporting & Compliance</li>
+                    </ul>
+                </div>
+                <div class="sdc-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Financial Consulting">
+                </div>
+            </div>
+
+            <!-- Strategy & Analytics -->
+            <div class="service-detail-card reverse" id="strategy-analytics">
+                <div class="sdc-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="sdc-content">
+                    <h3>Strategy & Analytics</h3>
+                    <p>Turn data into decisive action. Our strategy and analytics practice combines advanced quantitative modeling with deep industry knowledge to help you outperform the competition and navigate uncertainty with confidence.</p>
+                    <ul class="sdc-list">
+                        <li><i class="fa-solid fa-check"></i> Market Entry Strategy</li>
+                        <li><i class="fa-solid fa-check"></i> Competitive Intelligence</li>
+                        <li><i class="fa-solid fa-check"></i> Predictive Analytics & AI</li>
+                        <li><i class="fa-solid fa-check"></i> Performance Benchmarking</li>
+                    </ul>
+                </div>
+                <div class="sdc-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Strategy & Analytics">
+                </div>
+            </div>
+
+            <!-- Investment Advisory -->
+            <div class="service-detail-card" id="investment-advisory">
+                <div class="sdc-icon"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="sdc-content">
+                    <h3>Investment Advisory</h3>
+                    <p>Navigate complex investment landscapes with confidence. We provide bespoke investment advisory services for institutional investors, family offices, and high-net-worth individuals — aligning portfolios with long-term goals.</p>
+                    <ul class="sdc-list">
+                        <li><i class="fa-solid fa-check"></i> Portfolio Construction & Optimization</li>
+                        <li><i class="fa-solid fa-check"></i> Alternative Investments</li>
+                        <li><i class="fa-solid fa-check"></i> ESG & Impact Investing</li>
+                        <li><i class="fa-solid fa-check"></i> Wealth Preservation Strategies</li>
+                    </ul>
+                </div>
+                <div class="sdc-image">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Investment Advisory">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== INDUSTRIES SECTION ========== -->
+    <section class="sec-industries" id="industries-section">
+        <div class="container">
+            <div class="sec-label"><span class="section-tag">INDUSTRIES</span></div>
+            <h2 class="sec-title-center">Deep Expertise Across<br>Key Sectors</h2>
+            <div class="industries-grid">
+
+                <!-- Banking & Finance -->
+                <div class="industry-card" id="banking-finance">
+                    <div class="industry-img">
+                        <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Banking & Finance">
+                        <div class="industry-overlay"></div>
+                    </div>
+                    <div class="industry-body">
+                        <div class="industry-icon"><i class="fa-solid fa-landmark"></i></div>
+                        <h3>Banking & Finance</h3>
+                        <p>From retail banking transformation to capital markets advisory, we help financial institutions navigate regulatory change, digital disruption, and evolving customer expectations.</p>
+                        <a href="contact.html" class="industry-link">Explore <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Technology -->
+                <div class="industry-card" id="technology">
+                    <div class="industry-img">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Technology">
+                        <div class="industry-overlay"></div>
+                    </div>
+                    <div class="industry-body">
+                        <div class="industry-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <h3>Technology</h3>
+                        <p>We partner with tech companies at every stage — from Series A startups to global enterprises — delivering go-to-market strategies, M&A support, and operational excellence programs.</p>
+                        <a href="contact.html" class="industry-link">Explore <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Healthcare -->
+                <div class="industry-card" id="healthcare">
+                    <div class="industry-img">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Healthcare">
+                        <div class="industry-overlay"></div>
+                    </div>
+                    <div class="industry-body">
+                        <div class="industry-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                        <h3>Healthcare</h3>
+                        <p>We help healthcare organizations improve patient outcomes, streamline operations, and navigate the complex regulatory landscape — driving value across the entire care continuum.</p>
+                        <a href="contact.html" class="industry-link">Explore <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="sec-about" id="about-section">
+        <div class="container">
+            <div class="sec-label"><span class="section-tag">ABOUT US</span></div>
+
+            <!-- Our Story -->
+            <div class="about-block" id="our-story">
+                <div class="about-block-text">
+                    <span class="about-block-tag">OUR STORY</span>
+                    <h3>From a Bold Idea to a<br>Global Consulting Force</h3>
+                    <p>Finovate was founded in 2005 by a team of seasoned financial professionals who believed that consulting could be better — more transparent, more collaborative, and more committed to client success. What started as a boutique firm in London has grown into a global practice with offices across 4 continents.</p>
+                    <p>Today, we continue to be driven by that founding vision: delivering exceptional counsel that helps organizations achieve their boldest ambitions.</p>
+                </div>
+                <div class="about-block-visual">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Our Story">
+                </div>
+            </div>
+
+            <!-- Leadership -->
+            <div class="about-block reverse" id="leadership">
+                <div class="about-block-visual">
+                    <img src="https://images.unsplash.com/photo-1560439514-4e9645039924?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Leadership">
+                </div>
+                <div class="about-block-text">
+                    <span class="about-block-tag">LEADERSHIP</span>
+                    <h3>Guided by Experience,<br>Driven by Purpose</h3>
+                    <p>Our leadership team brings together decades of experience from the world's top financial institutions, consulting firms, and technology companies. United by a shared commitment to excellence and integrity, they set the tone for our entire organization.</p>
+                    <div class="leadership-avatars">
+                        <div class="leader-card">
+                            <div class="leader-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                            <strong>James Okafor</strong>
+                            <span>CEO & Co-founder</span>
+                        </div>
+                        <div class="leader-card">
+                            <div class="leader-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                            <strong>Amara Diallo</strong>
+                            <span>COO</span>
+                        </div>
+                        <div class="leader-card">
+                            <div class="leader-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                            <strong>Leila Hassan</strong>
+                            <span>CFO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sustainability -->
+            <div class="about-block" id="sustainability">
+                <div class="about-block-text">
+                    <span class="about-block-tag">SUSTAINABILITY</span>
+                    <h3>Our Commitment to a<br>Better World</h3>
+                    <p>We believe that great consulting must also be responsible consulting. Our sustainability framework integrates ESG principles into everything we do — from how we advise clients to how we operate our own business. We are committed to carbon neutrality by 2030.</p>
+                    <div class="sustain-pillars">
+                        <div class="sustain-pillar"><i class="fa-solid fa-leaf"></i><span>Environmental</span></div>
+                        <div class="sustain-pillar"><i class="fa-solid fa-users"></i><span>Social</span></div>
+                        <div class="sustain-pillar"><i class="fa-solid fa-scale-balanced"></i><span>Governance</span></div>
+                    </div>
+                </div>
+                <div class="about-block-visual">
+                    <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80" alt="Sustainability">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========== INSIGHT SECTION ========== -->
+    <section class="sec-insight" id="insight">
+        <div class="container">
+            <div class="sec-label"><span class="section-tag">INSIGHT</span></div>
+            <div class="insight-header">
+                <h2>Ideas That Drive<br>Transformation</h2>
+                <p>Explore our latest thinking on finance, strategy, and the forces shaping tomorrow's business landscape.</p>
+            </div>
+
+            <!-- Featured Article -->
+            <div class="insight-featured">
+                <div class="insight-featured-img">
+                    <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Featured Insight">
+                    <div class="insight-featured-overlay"></div>
+                    <div class="insight-featured-content">
+                        <span class="insight-tag">MARKET OUTLOOK</span>
+                        <h3>The Future of Global Finance in 2025: Trends Every Executive Must Know</h3>
+                        <p>Interest rate shifts, AI-driven trading, and geopolitical realignment are reshaping how capital flows across the globe. Our analysts break down what to expect.</p>
+                        <div class="insight-meta">
+                            <span><i class="fa-solid fa-calendar"></i> 28 May 2025</span>
+                            <span><i class="fa-solid fa-clock"></i> 8 min read</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" style="margin-top: 20px;">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article Grid -->
+            <div class="insight-grid">
+
+                <article class="insight-card">
+                    <div class="insight-card-img">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Strategy">
+                        <span class="insight-tag">STRATEGY</span>
+                    </div>
+                    <div class="insight-card-body">
+                        <h4>Why Scenario Planning Is the Most Underused Tool in the C-Suite</h4>
+                        <p>Leaders who embrace structured uncertainty outperform their peers by 2.3x over a 5-year horizon.</p>
+                        <div class="insight-meta">
+                            <span><i class="fa-solid fa-calendar"></i> 15 May 2025</span>
+                            <span><i class="fa-solid fa-clock"></i> 5 min read</span>
+                        </div>
+                        <a href="#" class="insight-read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="insight-card">
+                    <div class="insight-card-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Analytics">
+                        <span class="insight-tag">ANALYTICS</span>
+                    </div>
+                    <div class="insight-card-body">
+                        <h4>Predictive Analytics: Moving from Reactive to Proactive Decision-Making</h4>
+                        <p>Data-driven organizations are rewriting the rules of competitive advantage with real-time intelligence.</p>
+                        <div class="insight-meta">
+                            <span><i class="fa-solid fa-calendar"></i> 3 May 2025</span>
+                            <span><i class="fa-solid fa-clock"></i> 6 min read</span>
+                        </div>
+                        <a href="#" class="insight-read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="insight-card">
+                    <div class="insight-card-img">
+                        <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Investment">
+                        <span class="insight-tag">INVESTMENT</span>
+                    </div>
+                    <div class="insight-card-body">
+                        <h4>ESG Investing in Africa: Unlocking a $3 Trillion Opportunity</h4>
+                        <p>Impact investors are finding extraordinary returns by aligning capital with purpose in emerging African markets.</p>
+                        <div class="insight-meta">
+                            <span><i class="fa-solid fa-calendar"></i> 20 Apr 2025</span>
+                            <span><i class="fa-solid fa-clock"></i> 7 min read</span>
+                        </div>
+                        <a href="#" class="insight-read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Newsletter CTA -->
+            <div class="insight-newsletter">
+                <div class="insight-newsletter-text">
+                    <h3>Stay Ahead of the Curve</h3>
+                    <p>Get our latest insights delivered straight to your inbox every week — no spam, just sharp analysis.</p>
+                </div>
+                <form class="insight-newsletter-form" id="insightNewsletterForm">
+                    <input type="email" class="form-control" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Finovate Consulting. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Free Consultation Modal -->
+    <div class="modal-overlay" id="consultModal">
+        <div class="modal-box">
+            <button class="modal-close" id="closeConsultModal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <span class="modal-tag">FREE CONSULTATION</span>
+                <h2>Let's Start a Conversation</h2>
+                <p>Fill in a few details and our team will reach out within 24 hours.</p>
+            </div>
+            <form id="consultForm" class="modal-form">
+                <div class="modal-form-row">
+                    <div class="modal-form-group">
+                        <label for="c-name">Full Name</label>
+                        <input type="text" id="c-name" class="form-control" placeholder="John Doe" required>
+                    </div>
+                    <div class="modal-form-group">
+                        <label for="c-email">Email Address</label>
+                        <input type="email" id="c-email" class="form-control" placeholder="john@example.com" required>
+                    </div>
+                </div>
+                <div class="modal-form-group">
+                    <label for="c-service">Service You're Interested In</label>
+                    <select id="c-service" class="form-control" required>
+                        <option value="" disabled selected>Choose a service...</option>
+                        <option value="financial">Financial Consulting</option>
+                        <option value="strategy">Strategy &amp; Analytics</option>
+                        <option value="investment">Investment Advisory</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="modal-form-group">
+                    <label for="c-topic">What's your main challenge?</label>
+                    <textarea id="c-topic" class="form-control" placeholder="Briefly describe what you need help with..." rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary modal-submit-btn">
+                    Request Consultation <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+            <div class="modal-success" id="consultSuccess" style="display:none;">
+                <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <h3>Request Submitted!</h3>
+                <p>Thank you! Our team will contact you within 24 hours.</p>
+                <button class="btn btn-primary" id="closeSuccessBtn">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
