@@ -1,6 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // ============================================
+    // Mobile Menu Toggle
+    // ============================================
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navLinks = document.querySelector('.nav-links');
+    if (hamburgerBtn && navLinks) {
+        hamburgerBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    }
+
+    // ============================================
     // Sticky Navbar on Scroll
     // ============================================
     const navbar = document.getElementById('navbar');
