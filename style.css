@@ -1764,14 +1764,51 @@ select.form-control {
   .contact-cards-grid {
     grid-template-columns: 1fr;
   }
+  .nav-links {
+    display: none; /* Hide default nav links on tablet */
+  }
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 24px;
+    right: 24px;
+    background-color: var(--dark-color);
+    padding: 24px;
+    border-radius: var(--border-radius-lg);
+    z-index: 1000;
+  }
+  .nav-links.active .dropdown-menu {
+    position: static;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
+    background-color: rgba(255,255,255,0.05);
+    margin-top: 8px;
+    display: none;
+  }
+  .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .nav-links.active a {
+    width: 100%;
+    padding: 8px 0;
+  }
+  .hamburger-btn {
+    display: block !important;
+  }
 }
 
 @media (max-width: 768px) {
   .hero-stats-bar {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    gap: 8px;
   }
-  .nav-links {
-    display: none;
+  .stat-item {
+    text-align: center;
+    justify-content: center;
   }
   .insight-grid {
     grid-template-columns: 1fr;
@@ -1779,11 +1816,12 @@ select.form-control {
   .insight-newsletter {
     flex-direction: column;
     align-items: flex-start;
-    padding: 36px;
+    padding: 36px 24px;
   }
   .insight-newsletter-form {
     min-width: unset;
     width: 100%;
+    flex-direction: column;
   }
   .insight-featured-img {
     height: 360px;
@@ -1813,9 +1851,40 @@ select.form-control {
     grid-template-columns: 1fr;
   }
   .leadership-avatars {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
   .sustain-pillars {
-    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-row, .modal-form-row {
+    grid-template-columns: 1fr;
+  }
+  .hero-title {
+    font-size: 36px;
+  }
+  .contact-form-wrapper {
+    padding: 24px;
+  }
+  .modal-box {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 28px;
+  }
+  .overview-stats-grid {
+    grid-template-columns: 1fr;
+  }
+  .partner-logo-item {
+    width: 100%;
+    justify-content: center;
+  }
+  .nav-actions .contact-btn {
+    display: none;
   }
 }
