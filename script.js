@@ -118,6 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 submitBtn.disabled = false;
             }, 1500);
         });
+    }
     // ============================================
     // Insight Newsletter Form
     // ============================================
